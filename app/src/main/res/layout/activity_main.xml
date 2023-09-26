@@ -39,12 +39,25 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="240dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="check current time by looking below real degital clock"
             android:textSize="16dp"
             />
+
+        <TextClock
+            android:id="@+id/Textclock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="258dp"
+            android:text="set alarm time:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:format24Hour="hh:mm:ss a"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+        </TextClock>
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
@@ -61,7 +74,8 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteY="147dp"
-        android:layout_marginTop="360dp">
+        android:layout_marginTop="360dp"
+        android:visibility="invisible">
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="match_parent"
